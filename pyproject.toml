@@ -1,0 +1,22 @@
+[project]
+name = "medicine-recommendation-system"
+version = "1.0.0"
+description = "Streamlit medicine recommendation system with ML training, SQLite data, and safety-aware ranking."
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "joblib>=1.4.2",
+  "numpy>=1.26.4",
+  "pandas>=2.2.2",
+  "scikit-learn>=1.5.1",
+  "streamlit>=1.37.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2.2"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"

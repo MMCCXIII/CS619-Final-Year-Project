@@ -1,0 +1,587 @@
+:root,
+      .stApp {
+        --app-ink: #102a43;
+        --app-muted: color-mix(in srgb, #102a43 65%, transparent);
+        --app-line: color-mix(in srgb, #102a43 18%, transparent);
+        --app-surface: #ffffff;
+        --app-soft: #f5f8fa;
+
+        --app-teal: #0f766e;
+        --app-blue: #2563eb;
+        --app-amber: #d97706;
+        --app-red: #dc2626;
+
+        --app-bg-start: color-mix(in srgb, #ffffff 88%, #0f766e 12%);
+        --app-bg-mid: #ffffff;
+        --app-bg-end: color-mix(in srgb, #ffffff 94%, #102a43 6%);
+
+        --app-heading: #16324f;
+        --app-subheading: color-mix(in srgb, #102a43 85%, transparent);
+
+        --app-tab: color-mix(in srgb, #102a43 75%, transparent);
+        --app-tab-hover: #0f766e;
+
+        --app-button-start: color-mix(in srgb, #0f766e 85%, #102a43 15%);
+        --app-button-end: #2563eb;
+        --app-button-shadow: color-mix(in srgb, #0f766e 15%, transparent);
+        --app-button-shadow-hover: color-mix(in srgb, #0f766e 22%, transparent);
+        --app-focus: color-mix(in srgb, #0f766e 15%, transparent);
+
+        --app-status-text: color-mix(in srgb, #102a43 85%, transparent);
+
+        --app-safe-bg: color-mix(in srgb, #ffffff 85%, #14b8a6 15%);
+        --app-safe-line: color-mix(in srgb, #14b8a6 40%, transparent);
+
+        --app-warning-bg: color-mix(in srgb, #ffffff 85%, #f59e0b 15%);
+        --app-warning-line: color-mix(in srgb, #f59e0b 45%, transparent);
+
+        --app-track: color-mix(in srgb, #102a43 14%, transparent);
+        --app-card-shadow: color-mix(in srgb, #000000 12%, transparent);
+        color-scheme: __APP_COLOR_SCHEME__;
+      }
+
+      @supports (color: light-dark(#000000, #ffffff)) {
+        :root,
+        .stApp {
+          --app-ink: light-dark(#102a43, #eef4f8);
+          --app-muted: color-mix(in srgb, var(--app-ink) 65%, transparent);
+          --app-line: color-mix(in srgb, var(--app-ink) 18%, transparent);
+          --app-surface: light-dark(#ffffff, #171b21);
+          --app-soft: light-dark(#f5f8fa, #101418);
+
+          --app-teal: light-dark(#0f766e, #2dd4bf);
+          --app-blue: light-dark(#2563eb, #60a5fa);
+          --app-amber: light-dark(#d97706, #fbbf24);
+          --app-red: light-dark(#dc2626, #f87171);
+
+          --app-bg-start: light-dark(
+            color-mix(in srgb, #ffffff 88%, #0f766e 12%),
+            color-mix(in srgb, #101418 82%, #2dd4bf 18%)
+          );
+          --app-bg-mid: light-dark(#ffffff, #101418);
+          --app-bg-end: light-dark(
+            color-mix(in srgb, #ffffff 94%, #102a43 6%),
+            color-mix(in srgb, #101418 92%, #eef4f8 8%)
+          );
+
+          --app-heading: light-dark(#16324f, #f4f8fb);
+          --app-subheading: color-mix(in srgb, var(--app-ink) 85%, transparent);
+
+          --app-tab: color-mix(in srgb, var(--app-ink) 75%, transparent);
+          --app-tab-hover: var(--app-teal);
+
+          --app-button-start: color-mix(in srgb, var(--app-teal) 85%, var(--app-ink) 15%);
+          --app-button-end: var(--app-blue);
+          --app-button-shadow: color-mix(in srgb, var(--app-teal) 15%, transparent);
+          --app-button-shadow-hover: color-mix(in srgb, var(--app-teal) 22%, transparent);
+          --app-focus: color-mix(in srgb, var(--app-teal) 18%, transparent);
+
+          --app-status-text: color-mix(in srgb, var(--app-ink) 85%, transparent);
+
+          --app-safe-bg: color-mix(in srgb, var(--app-surface) 84%, var(--app-teal) 16%);
+          --app-safe-line: color-mix(in srgb, var(--app-teal) 42%, transparent);
+
+          --app-warning-bg: color-mix(in srgb, var(--app-surface) 82%, var(--app-amber) 18%);
+          --app-warning-line: color-mix(in srgb, var(--app-amber) 45%, transparent);
+
+          --app-track: color-mix(in srgb, var(--app-ink) 14%, transparent);
+          --app-card-shadow: light-dark(
+            color-mix(in srgb, #000000 12%, transparent),
+            color-mix(in srgb, #000000 34%, transparent)
+          );
+        }
+      }
+
+      html,
+      body,
+      .stApp,
+      [data-testid="stAppViewContainer"],
+      [data-testid="stMain"] {
+        background-color: var(--app-bg-mid);
+        color: var(--app-ink);
+      }
+
+      .stApp {
+        background:
+          linear-gradient(180deg, var(--app-bg-start) 0%, var(--app-bg-mid) 38%, var(--app-bg-end) 100%);
+        color: var(--app-ink);
+      }
+
+      [data-testid="stHeader"],
+      [data-testid="stToolbar"],
+      [data-testid="stDecoration"] {
+        background: transparent;
+      }
+
+      .block-container {
+        max-width: 1280px;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+      }
+
+      h1 {
+        color: var(--app-ink);
+        font-size: 2.15rem;
+        line-height: 1.1;
+        font-weight: 760;
+        letter-spacing: 0;
+        margin-bottom: .35rem;
+      }
+
+      h3 {
+        color: var(--app-heading);
+        font-size: 1.12rem;
+        font-weight: 720;
+        letter-spacing: 0;
+      }
+
+      h4 {
+        color: var(--app-subheading);
+        font-size: .98rem;
+        font-weight: 720;
+        letter-spacing: 0;
+      }
+
+      .app-kicker {
+        color: var(--app-muted);
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      div[data-testid="stTabs"] button {
+        border-radius: 7px 7px 0 0;
+        color: var(--app-tab);
+        font-weight: 650;
+        letter-spacing: 0;
+        transition: color .18s ease, background .18s ease, border-color .18s ease;
+      }
+
+      div[data-testid="stTabs"] button[aria-selected="true"] {
+        color: var(--app-teal);
+        background: color-mix(in srgb, var(--app-teal) 12%, transparent);
+        border-bottom-color: var(--app-teal);
+      }
+
+      div[data-testid="stTabs"] button:hover {
+        color: var(--app-tab-hover);
+        background: color-mix(in srgb, var(--app-teal) 10%, transparent);
+      }
+
+      div[data-testid="stAlert"] {
+        border-radius: 8px;
+        border-width: 1px;
+        background-color: color-mix(in srgb, var(--app-blue) 16%, var(--app-surface)) !important;
+        border-color: color-mix(in srgb, var(--app-blue) 36%, transparent) !important;
+        color: var(--app-ink) !important;
+      }
+
+      div[data-testid="stAlert"] * {
+        color: var(--app-ink) !important;
+      }
+
+      .stButton > button {
+        min-height: 2.9rem;
+        border-radius: 7px;
+        border: 1px solid color-mix(in srgb, var(--app-teal) 38%, transparent);
+        background: linear-gradient(135deg, var(--app-button-start) 0%, var(--app-button-end) 100%);
+        color: #ffffff;
+        font-weight: 720;
+        letter-spacing: 0;
+        box-shadow: 0 8px 18px var(--app-button-shadow);
+        transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+      }
+
+      .stButton > button p {
+        color: #ffffff;
+      }
+
+      .stButton > button:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 12px 24px var(--app-button-shadow-hover);
+        border-color: color-mix(in srgb, var(--app-teal) 62%, transparent);
+      }
+
+      .stButton > button:active {
+        transform: translateY(0);
+        box-shadow: 0 5px 12px var(--app-button-shadow);
+      }
+
+      .stButton > button:disabled,
+      .stButton > button:disabled:hover {
+        background: color-mix(in srgb, var(--app-surface) 86%, var(--app-muted) 14%);
+        border-color: var(--app-line);
+        box-shadow: none;
+        color: var(--app-muted);
+        transform: none;
+      }
+
+      .stButton > button:disabled p {
+        color: var(--app-muted);
+      }
+
+      [data-testid="stWidgetLabel"],
+      [data-testid="stWidgetLabel"] p,
+      label,
+      legend {
+        color: var(--app-ink) !important;
+      }
+
+      div[data-baseweb="select"] > div,
+      div[data-baseweb="base-input"],
+      textarea,
+      input {
+        border-radius: 7px !important;
+        background-color: var(--app-surface) !important;
+        border-color: var(--app-line) !important;
+        color: var(--app-ink) !important;
+      }
+
+      div[data-baseweb="select"] span,
+      div[data-baseweb="select"] div,
+      div[data-baseweb="select"] input,
+      div[data-baseweb="base-input"] div,
+      div[data-baseweb="base-input"] input,
+      textarea {
+        color: var(--app-ink) !important;
+        caret-color: var(--app-ink) !important;
+      }
+
+      div[data-baseweb="select"] svg,
+      div[data-baseweb="tag"] svg {
+        color: var(--app-muted) !important;
+        fill: currentColor !important;
+      }
+
+      textarea::placeholder,
+      input::placeholder {
+        color: var(--app-muted) !important;
+      }
+
+      textarea:focus,
+      input:focus,
+      div[data-baseweb="select"]:focus-within > div {
+        border-color: color-mix(in srgb, var(--app-teal) 72%, transparent) !important;
+        box-shadow: 0 0 0 3px var(--app-focus) !important;
+      }
+
+      div[data-baseweb="popover"],
+      div[data-baseweb="popover"] > div,
+      div[data-baseweb="menu"],
+      ul[role="listbox"] {
+        background-color: var(--app-surface) !important;
+        border-color: var(--app-line) !important;
+        color: var(--app-ink) !important;
+      }
+
+      li[role="option"],
+      div[role="option"] {
+        background-color: var(--app-surface) !important;
+        color: var(--app-ink) !important;
+      }
+
+      li[role="option"] *,
+      div[role="option"] *,
+      div[data-baseweb="menu"] * {
+        color: var(--app-ink) !important;
+      }
+
+      li[role="option"]:hover,
+      li[role="option"][aria-selected="true"],
+      div[role="option"]:hover,
+      div[role="option"][aria-selected="true"] {
+        background-color: color-mix(in srgb, var(--app-teal) 14%, var(--app-surface)) !important;
+        color: var(--app-ink) !important;
+      }
+
+      div[data-baseweb="tag"] {
+        background-color: color-mix(in srgb, var(--app-teal) 16%, var(--app-surface)) !important;
+        border: 1px solid color-mix(in srgb, var(--app-teal) 35%, transparent) !important;
+        color: var(--app-ink) !important;
+      }
+
+      div[data-baseweb="tag"] span {
+        color: var(--app-ink) !important;
+      }
+
+      .metric-card {
+        background: var(--app-surface);
+        border: 1px solid var(--app-line);
+        border-radius: 8px;
+        padding: 1rem 1.05rem;
+        box-shadow: 0 10px 24px var(--app-card-shadow);
+      }
+
+      .metric-card span {
+        display: block;
+        color: var(--app-muted);
+        font-size: .82rem;
+        font-weight: 680;
+        letter-spacing: 0;
+        margin-bottom: .35rem;
+      }
+
+      .metric-card strong {
+        color: var(--app-ink);
+        display: block;
+        font-size: 1.55rem;
+        line-height: 1.05;
+      }
+
+      .metric-card--green { border-top: 3px solid var(--app-teal); }
+      .metric-card--blue { border-top: 3px solid var(--app-blue); }
+      .metric-card--amber { border-top: 3px solid var(--app-amber); }
+      .metric-card--red { border-top: 3px solid var(--app-red); }
+
+      .status-band {
+        border-radius: 8px;
+        border: 1px solid var(--app-line);
+        padding: .85rem 1rem;
+        margin: .35rem 0 1rem;
+      }
+
+      .status-band strong {
+        display: block;
+        font-size: .92rem;
+        margin-bottom: .2rem;
+      }
+
+      .status-band span {
+        color: var(--app-status-text);
+        font-size: .9rem;
+      }
+
+      .status-band--safe {
+        background: var(--app-safe-bg);
+        border-color: var(--app-safe-line);
+      }
+
+      .status-band--warning {
+        background: var(--app-warning-bg);
+        border-color: var(--app-warning-line);
+      }
+
+      .result-card {
+        background: var(--app-surface);
+        border: 1px solid var(--app-line);
+        border-radius: 8px;
+        padding: 1rem;
+        min-height: 8.1rem;
+        box-shadow: 0 10px 24px var(--app-card-shadow);
+      }
+
+      .result-card span {
+        color: var(--app-muted);
+        display: block;
+        font-size: .78rem;
+        font-weight: 700;
+        margin-bottom: .35rem;
+      }
+
+      .result-card strong {
+        color: var(--app-ink);
+        display: block;
+        font-size: 1rem;
+        line-height: 1.25;
+        min-height: 2.5rem;
+      }
+
+      .result-card small {
+        color: var(--app-muted);
+      }
+
+      .result-card em {
+        color: var(--app-status-text);
+        display: block;
+        font-size: .78rem;
+        font-style: normal;
+        line-height: 1.35;
+        margin-top: .45rem;
+      }
+
+      .result-card--green { border-top: 3px solid var(--app-teal); }
+      .result-card--blue { border-top: 3px solid var(--app-blue); }
+
+      .medicine-card {
+        background: var(--app-surface);
+        border: 1px solid var(--app-line);
+        border-radius: 8px;
+        box-shadow: 0 10px 24px var(--app-card-shadow);
+        min-height: 15rem;
+        padding: 1rem;
+      }
+
+      .medicine-card span {
+        color: var(--app-muted);
+        display: block;
+        font-size: .76rem;
+        font-weight: 720;
+        margin-bottom: .35rem;
+      }
+
+      .medicine-card strong {
+        color: var(--app-ink);
+        display: block;
+        font-size: 1.05rem;
+        line-height: 1.25;
+        margin-bottom: .55rem;
+      }
+
+      .medicine-meta {
+        align-items: center;
+        display: flex;
+        gap: .5rem;
+        justify-content: space-between;
+        margin-bottom: .6rem;
+      }
+
+      .medicine-meta b,
+      .medicine-meta i {
+        color: var(--app-muted);
+        font-size: .78rem;
+        font-style: normal;
+        font-weight: 680;
+      }
+
+      .medicine-card p {
+        color: var(--app-status-text);
+        font-size: .86rem;
+        line-height: 1.4;
+        margin: 0 0 .8rem;
+      }
+
+      .medicine-card em {
+        color: var(--app-muted);
+        display: block;
+        font-size: .78rem;
+        font-style: normal;
+        line-height: 1.35;
+        margin-top: .65rem;
+      }
+
+      .pill-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .4rem;
+      }
+
+      .pill-row small {
+        background: color-mix(in srgb, var(--app-blue) 10%, var(--app-surface));
+        border: 1px solid color-mix(in srgb, var(--app-blue) 25%, transparent);
+        border-radius: 999px;
+        color: var(--app-status-text);
+        font-size: .72rem;
+        padding: .22rem .48rem;
+      }
+
+      .medicine-card--green { border-top: 3px solid var(--app-teal); }
+      .medicine-card--blue { border-top: 3px solid var(--app-blue); }
+
+      .profile-strip {
+        background: color-mix(in srgb, var(--app-surface) 88%, var(--app-blue) 12%);
+        border: 1px solid color-mix(in srgb, var(--app-blue) 28%, transparent);
+        border-radius: 8px;
+        color: var(--app-status-text);
+        font-size: .88rem;
+        line-height: 1.4;
+        margin: .35rem 0 1rem;
+        padding: .75rem .9rem;
+      }
+
+      .lookup-panel,
+      .history-card,
+      .feedback-box {
+        background: var(--app-surface);
+        border: 1px solid var(--app-line);
+        border-radius: 8px;
+        box-shadow: 0 10px 24px var(--app-card-shadow);
+        padding: 1rem;
+      }
+
+      .lookup-panel strong,
+      .history-card strong {
+        color: var(--app-ink);
+        display: block;
+        font-size: 1.15rem;
+        margin-bottom: .35rem;
+      }
+
+      .lookup-panel span,
+      .history-card span {
+        color: var(--app-muted);
+        display: block;
+        font-size: .85rem;
+        line-height: 1.45;
+      }
+
+      .feedback-box {
+        margin-top: 1rem;
+      }
+
+      .confidence-track {
+        background: var(--app-track);
+        border-radius: 999px;
+        height: .45rem;
+        overflow: hidden;
+        margin: .75rem 0 .45rem;
+      }
+
+      .confidence-track div {
+        background: linear-gradient(90deg, var(--app-teal), var(--app-blue));
+        height: 100%;
+        border-radius: inherit;
+      }
+
+      .detected-list {
+        color: var(--app-muted);
+        font-size: .9rem;
+        line-height: 1.45;
+        margin: .2rem 0 1rem;
+      }
+
+      .care-list {
+        background: color-mix(in srgb, var(--app-surface) 92%, var(--app-teal) 8%);
+        border: 1px solid var(--app-line);
+        border-radius: 8px;
+        color: var(--app-status-text);
+        line-height: 1.45;
+        margin: .35rem 0 1rem;
+        padding: .95rem 1.1rem .95rem 1.6rem;
+      }
+
+      .care-list li + li {
+        margin-top: .45rem;
+      }
+
+      div[data-testid="stDataFrame"] {
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid var(--app-line);
+        box-shadow: 0 10px 24px var(--app-card-shadow);
+      }
+
+      div[data-testid="stExpander"] {
+        border-color: var(--app-line);
+        background: color-mix(in srgb, var(--app-surface) 88%, transparent);
+      }
+
+      @keyframes fade-rise {
+        from {
+          opacity: 0;
+          transform: translateY(6px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        .metric-card,
+        .result-card,
+        .medicine-card,
+        .lookup-panel,
+        .history-card,
+        .status-band {
+          animation: fade-rise .24s ease-out both;
+        }
+      }

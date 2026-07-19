@@ -1,0 +1,1420 @@
+{
+  "best_model": "Multinomial Naive Bayes",
+  "feature_count": 404,
+  "training_cases": 4800,
+  "class_count": 160,
+  "models": {
+    "Multinomial Naive Bayes": {
+      "accuracy": 0.8075,
+      "f1_weighted": 0.8162,
+      "best_params": null
+    },
+    "Complement Naive Bayes": {
+      "accuracy": 0.7883,
+      "f1_weighted": 0.7921,
+      "best_params": null
+    },
+    "Logistic Regression Tuned": {
+      "accuracy": 0.7958,
+      "f1_weighted": 0.8018,
+      "best_params": {
+        "C": 1.0
+      }
+    },
+    "Random Forest Tuned": {
+      "accuracy": 0.7933,
+      "f1_weighted": 0.8009,
+      "best_params": {
+        "max_depth": null,
+        "min_samples_leaf": 2,
+        "n_estimators": 140
+      }
+    },
+    "Neural Network MLP": {
+      "accuracy": 0.7217,
+      "f1_weighted": 0.7219,
+      "best_params": null
+    }
+  },
+  "classification_report": {
+    "Acne": {
+      "precision": 1.0,
+      "recall": 0.7142857142857143,
+      "f1-score": 0.8333333333333334,
+      "support": 7.0
+    },
+    "Acute Abdomen": {
+      "precision": 1.0,
+      "recall": 0.625,
+      "f1-score": 0.7692307692307693,
+      "support": 8.0
+    },
+    "Allergic Conjunctivitis": {
+      "precision": 0.6666666666666666,
+      "recall": 0.5714285714285714,
+      "f1-score": 0.6153846153846154,
+      "support": 7.0
+    },
+    "Allergic Rhinitis": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
+      "support": 8.0
+    },
+    "Anemia": {
+      "precision": 0.25,
+      "recall": 0.5714285714285714,
+      "f1-score": 0.34782608695652173,
+      "support": 7.0
+    },
+    "Angina": {
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1-score": 0.9333333333333333,
+      "support": 8.0
+    },
+    "Anxiety Disorder": {
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.9230769230769231,
+      "support": 7.0
+    },
+    "Appendicitis": {
+      "precision": 0.7142857142857143,
+      "recall": 0.625,
+      "f1-score": 0.6666666666666666,
+      "support": 8.0
+    },
+    "Asthma": {
+      "precision": 1.0,
+      "recall": 0.625,
+      "f1-score": 0.7692307692307693,
+      "support": 8.0
+    },
+    "Atrial Fibrillation": {
+      "precision": 0.36363636363636365,
+      "recall": 0.5714285714285714,
+      "f1-score": 0.4444444444444444,
+      "support": 7.0
+    },
+    "Bacterial Vaginosis": {
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.9230769230769231,
+      "support": 7.0
+    },
+    "Bedwetting": {
+      "precision": 0.8571428571428571,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.8571428571428571,
+      "support": 7.0
+    },
+    "Benign Prostatic Hyperplasia": {
+      "precision": 1.0,
+      "recall": 0.7142857142857143,
+      "f1-score": 0.8333333333333334,
+      "support": 7.0
+    },
+    "Bronchitis": {
+      "precision": 0.5,
+      "recall": 0.25,
+      "f1-score": 0.3333333333333333,
+      "support": 8.0
+    },
+    "COPD Exacerbation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "COVID-19": {
+      "precision": 0.7142857142857143,
+      "recall": 0.7142857142857143,
+      "f1-score": 0.7142857142857143,
+      "support": 7.0
+    },
+    "Candidiasis": {
+      "precision": 0.7777777777777778,
+      "recall": 1.0,
+      "f1-score": 0.875,
+      "support": 7.0
+    },
+    "Carpal Tunnel Syndrome": {
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1-score": 0.9333333333333333,
+      "support": 8.0
+    },
+    "Cataract Symptoms": {
+      "precision": 1.0,
+      "recall": 0.5714285714285714,
+      "f1-score": 0.7272727272727273,
+      "support": 7.0
+    },
+    "Cellulitis": {
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.9230769230769231,
+      "support": 7.0
+    },
+    "Chickenpox": {
+      "precision": 0.8888888888888888,
+      "recall": 1.0,
+      "f1-score": 0.9411764705882353,
+      "support": 8.0
+    },
+    "Chikungunya": {
+      "precision": 0.4444444444444444,
+      "recall": 0.5,
+      "f1-score": 0.47058823529411764,
+      "support": 8.0
+    },
+    "Childhood Asthma Flare": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 7.0
+    },
+    "Cholera": {
+      "precision": 0.875,
+      "recall": 1.0,
+      "f1-score": 0.9333333333333333,
+      "support": 7.0
+    },
+    "Chronic Kidney Disease": {
+      "precision": 1.0,
+      "recall": 0.7142857142857143,
+      "f1-score": 0.8333333333333334,
+      "support": 7.0
+    },
+    "Cluster Headache": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 7.0
+    },
+    "Colic": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 7.0
+    },
+    "Common Cold": {
+      "precision": 0.3333333333333333,
+      "recall": 0.42857142857142855,
+      "f1-score": 0.375,
+      "support": 7.0
+    },
+    "Conjunctivitis": {
+      "precision": 0.6,
+      "recall": 0.42857142857142855,
+      "f1-score": 0.5,
+      "support": 7.0
+    },
+    "Constipation": {
+      "precision": 1.0,
+      "recall": 0.7142857142857143,
+      "f1-score": 0.8333333333333334,
+      "support": 7.0
+    },
+    "Contact Dermatitis": {
+      "precision": 0.46153846153846156,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.6,
+      "support": 7.0
+    },
+    "Croup": {
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.9230769230769231,
+      "support": 7.0
+    },
+    "Deep Vein Thrombosis": {
+      "precision": 0.75,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.8,
+      "support": 7.0
+    },
+    "Dehydration Child": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "Dengue Fever": {
+      "precision": 0.8571428571428571,
+      "recall": 0.75,
+      "f1-score": 0.8,
+      "support": 8.0
+    },
+    "Dental Caries": {
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1-score": 0.9333333333333333,
+      "support": 8.0
+    },
+    "Depression": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 7.0
+    },
+    "Diabetic Ketoacidosis Warning": {
+      "precision": 0.5833333333333334,
+      "recall": 0.875,
+      "f1-score": 0.7,
+      "support": 8.0
+    },
+    "Diaper Rash": {
+      "precision": 0.7777777777777778,
+      "recall": 0.875,
+      "f1-score": 0.8235294117647058,
+      "support": 8.0
+    },
+    "Diarrheal Illness": {
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1-score": 0.9333333333333333,
+      "support": 8.0
+    },
+    "Diverticulitis": {
+      "precision": 0.5,
+      "recall": 0.7142857142857143,
+      "f1-score": 0.5882352941176471,
+      "support": 7.0
+    },
+    "Dry Eye Syndrome": {
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.9230769230769231,
+      "support": 7.0
+    },
+    "Dysmenorrhea": {
+      "precision": 0.3333333333333333,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.48,
+      "support": 7.0
+    },
+    "Ear Infection Child": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "Ear Wax Impaction": {
+      "precision": 0.35714285714285715,
+      "recall": 0.7142857142857143,
+      "f1-score": 0.47619047619047616,
+      "support": 7.0
+    },
+    "Eczema": {
+      "precision": 1.0,
+      "recall": 0.5714285714285714,
+      "f1-score": 0.7272727272727273,
+      "support": 7.0
+    },
+    "Electrolyte Imbalance": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1-score": 0.8571428571428571,
+      "support": 8.0
+    },
+    "Endometriosis": {
+      "precision": 0.875,
+      "recall": 0.875,
+      "f1-score": 0.875,
+      "support": 8.0
+    },
+    "Epilepsy": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1-score": 0.8571428571428571,
+      "support": 8.0
+    },
+    "Erectile Dysfunction": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "Febrile Seizure": {
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1-score": 0.9333333333333333,
+      "support": 8.0
+    },
+    "Fibromyalgia": {
+      "precision": 0.35,
+      "recall": 1.0,
+      "f1-score": 0.5185185185185185,
+      "support": 7.0
+    },
+    "Food Poisoning": {
+      "precision": 0.7142857142857143,
+      "recall": 0.625,
+      "f1-score": 0.6666666666666666,
+      "support": 8.0
+    },
+    "Fracture Suspected": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "Fungal Skin Infection": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "GERD": {
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.9230769230769231,
+      "support": 7.0
+    },
+    "Gallbladder Disease": {
+      "precision": 0.5833333333333334,
+      "recall": 1.0,
+      "f1-score": 0.7368421052631579,
+      "support": 7.0
+    },
+    "Gastritis": {
+      "precision": 0.6666666666666666,
+      "recall": 0.5,
+      "f1-score": 0.5714285714285714,
+      "support": 8.0
+    },
+    "Gastroenteritis": {
+      "precision": 0.3333333333333333,
+      "recall": 0.375,
+      "f1-score": 0.35294117647058826,
+      "support": 8.0
+    },
+    "Gingivitis": {
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1-score": 0.9333333333333333,
+      "support": 8.0
+    },
+    "Glaucoma Alert": {
+      "precision": 0.8571428571428571,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.8571428571428571,
+      "support": 7.0
+    },
+    "Gout": {
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1-score": 0.9333333333333333,
+      "support": 8.0
+    },
+    "Growth Pain": {
+      "precision": 1.0,
+      "recall": 0.625,
+      "f1-score": 0.7692307692307693,
+      "support": 8.0
+    },
+    "Hand Foot and Mouth Disease": {
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1-score": 0.8888888888888888,
+      "support": 8.0
+    },
+    "Head Lice": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 7.0
+    },
+    "Hearing Loss": {
+      "precision": 0.5,
+      "recall": 0.2857142857142857,
+      "f1-score": 0.36363636363636365,
+      "support": 7.0
+    },
+    "Heart Attack Warning": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 7.0
+    },
+    "Heart Failure": {
+      "precision": 0.625,
+      "recall": 0.7142857142857143,
+      "f1-score": 0.6666666666666666,
+      "support": 7.0
+    },
+    "Heat Stroke": {
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1-score": 0.6666666666666666,
+      "support": 7.0
+    },
+    "Hemorrhoids": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 7.0
+    },
+    "Hepatitis A": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
+      "support": 8.0
+    },
+    "Herpes Simplex": {
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1-score": 0.9333333333333333,
+      "support": 8.0
+    },
+    "Hyperlipidemia": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1-score": 0.8571428571428571,
+      "support": 8.0
+    },
+    "Hypertension": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "Hyperthyroidism": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1-score": 0.8571428571428571,
+      "support": 8.0
+    },
+    "Hypoglycemia": {
+      "precision": 0.75,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.8,
+      "support": 7.0
+    },
+    "Hypothyroidism": {
+      "precision": 0.7,
+      "recall": 1.0,
+      "f1-score": 0.8235294117647058,
+      "support": 7.0
+    },
+    "Impetigo": {
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1-score": 0.9333333333333333,
+      "support": 8.0
+    },
+    "Inflammatory Bowel Flare": {
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.9230769230769231,
+      "support": 7.0
+    },
+    "Influenza": {
+      "precision": 0.45454545454545453,
+      "recall": 0.625,
+      "f1-score": 0.5263157894736842,
+      "support": 8.0
+    },
+    "Insect Bite Reaction": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1-score": 0.8571428571428571,
+      "support": 8.0
+    },
+    "Insomnia": {
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.9230769230769231,
+      "support": 7.0
+    },
+    "Irritable Bowel Syndrome": {
+      "precision": 0.26666666666666666,
+      "recall": 0.5714285714285714,
+      "f1-score": 0.36363636363636365,
+      "support": 7.0
+    },
+    "Kidney Stone": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "Lactose Intolerance": {
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.9230769230769231,
+      "support": 7.0
+    },
+    "Laryngitis": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 7.0
+    },
+    "Leptospirosis": {
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.9230769230769231,
+      "support": 7.0
+    },
+    "Low Back Pain": {
+      "precision": 0.8571428571428571,
+      "recall": 0.75,
+      "f1-score": 0.8,
+      "support": 8.0
+    },
+    "Malaria": {
+      "precision": 0.75,
+      "recall": 0.75,
+      "f1-score": 0.75,
+      "support": 8.0
+    },
+    "Measles": {
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1-score": 0.9333333333333333,
+      "support": 8.0
+    },
+    "Meningitis Warning": {
+      "precision": 0.875,
+      "recall": 1.0,
+      "f1-score": 0.9333333333333333,
+      "support": 7.0
+    },
+    "Menopause Symptoms": {
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1-score": 0.9333333333333333,
+      "support": 8.0
+    },
+    "Metabolic Syndrome": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "Migraine": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1-score": 0.8571428571428571,
+      "support": 8.0
+    },
+    "Minor Burn": {
+      "precision": 0.6666666666666666,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.75,
+      "support": 7.0
+    },
+    "Motion Sickness": {
+      "precision": 0.875,
+      "recall": 1.0,
+      "f1-score": 0.9333333333333333,
+      "support": 7.0
+    },
+    "Mouth Ulcer": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 7.0
+    },
+    "Mumps": {
+      "precision": 0.6666666666666666,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.75,
+      "support": 7.0
+    },
+    "Neck Strain": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 7.0
+    },
+    "Neuropathy": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "Nosebleed": {
+      "precision": 0.5833333333333334,
+      "recall": 1.0,
+      "f1-score": 0.7368421052631579,
+      "support": 7.0
+    },
+    "Nutritional Anemia Child": {
+      "precision": 0.7777777777777778,
+      "recall": 1.0,
+      "f1-score": 0.875,
+      "support": 7.0
+    },
+    "Obesity": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1-score": 0.8571428571428571,
+      "support": 8.0
+    },
+    "Oral Thrush": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "Osteoarthritis": {
+      "precision": 0.8333333333333334,
+      "recall": 0.7142857142857143,
+      "f1-score": 0.7692307692307693,
+      "support": 7.0
+    },
+    "Otitis Externa": {
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.9230769230769231,
+      "support": 7.0
+    },
+    "Otitis Media": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1-score": 0.8571428571428571,
+      "support": 8.0
+    },
+    "Pancreatitis": {
+      "precision": 0.875,
+      "recall": 0.875,
+      "f1-score": 0.875,
+      "support": 8.0
+    },
+    "Pediatric Fever": {
+      "precision": 1.0,
+      "recall": 0.42857142857142855,
+      "f1-score": 0.6,
+      "support": 7.0
+    },
+    "Pelvic Inflammatory Disease": {
+      "precision": 0.6666666666666666,
+      "recall": 0.5714285714285714,
+      "f1-score": 0.6153846153846154,
+      "support": 7.0
+    },
+    "Peptic Ulcer Disease": {
+      "precision": 1.0,
+      "recall": 0.625,
+      "f1-score": 0.7692307692307693,
+      "support": 8.0
+    },
+    "Peripheral Artery Disease": {
+      "precision": 0.8333333333333334,
+      "recall": 0.7142857142857143,
+      "f1-score": 0.7692307692307693,
+      "support": 7.0
+    },
+    "Pertussis": {
+      "precision": 0.875,
+      "recall": 1.0,
+      "f1-score": 0.9333333333333333,
+      "support": 7.0
+    },
+    "Pharyngitis": {
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1-score": 0.5,
+      "support": 8.0
+    },
+    "Pinworm Infection": {
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.9230769230769231,
+      "support": 7.0
+    },
+    "Pneumonia": {
+      "precision": 0.75,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.8,
+      "support": 7.0
+    },
+    "Poisoning Exposure": {
+      "precision": 0.875,
+      "recall": 0.875,
+      "f1-score": 0.875,
+      "support": 8.0
+    },
+    "Polycystic Ovary Syndrome": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "Pregnancy Nausea": {
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1-score": 0.9333333333333333,
+      "support": 8.0
+    },
+    "Prostatitis": {
+      "precision": 0.5714285714285714,
+      "recall": 0.5714285714285714,
+      "f1-score": 0.5714285714285714,
+      "support": 7.0
+    },
+    "Psoriasis": {
+      "precision": 0.4444444444444444,
+      "recall": 1.0,
+      "f1-score": 0.6153846153846154,
+      "support": 8.0
+    },
+    "Pulmonary Embolism Warning": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1-score": 0.8571428571428571,
+      "support": 8.0
+    },
+    "Pyelonephritis": {
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1-score": 0.9333333333333333,
+      "support": 8.0
+    },
+    "RSV Infection": {
+      "precision": 0.6,
+      "recall": 0.42857142857142855,
+      "f1-score": 0.5,
+      "support": 7.0
+    },
+    "Rabies Exposure": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "Rheumatoid Arthritis": {
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1-score": 0.9333333333333333,
+      "support": 8.0
+    },
+    "Rosacea": {
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.9230769230769231,
+      "support": 7.0
+    },
+    "Rubella": {
+      "precision": 0.8571428571428571,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.8571428571428571,
+      "support": 7.0
+    },
+    "Scabies": {
+      "precision": 0.8571428571428571,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.8571428571428571,
+      "support": 7.0
+    },
+    "School Anxiety": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "Sciatica": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1-score": 0.8571428571428571,
+      "support": 8.0
+    },
+    "Seborrheic Dermatitis": {
+      "precision": 1.0,
+      "recall": 0.7142857142857143,
+      "f1-score": 0.8333333333333334,
+      "support": 7.0
+    },
+    "Sepsis Warning": {
+      "precision": 0.5714285714285714,
+      "recall": 0.5714285714285714,
+      "f1-score": 0.5714285714285714,
+      "support": 7.0
+    },
+    "Severe Allergic Reaction": {
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1-score": 0.9333333333333333,
+      "support": 8.0
+    },
+    "Severe Bleeding": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "Severe Burn": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 7.0
+    },
+    "Severe Dehydration": {
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.9230769230769231,
+      "support": 7.0
+    },
+    "Shingles": {
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1-score": 0.9333333333333333,
+      "support": 8.0
+    },
+    "Sinusitis": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 7.0
+    },
+    "Skin Abscess": {
+      "precision": 0.8571428571428571,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.8571428571428571,
+      "support": 7.0
+    },
+    "Stroke Warning": {
+      "precision": 1.0,
+      "recall": 0.125,
+      "f1-score": 0.2222222222222222,
+      "support": 8.0
+    },
+    "Stye": {
+      "precision": 1.0,
+      "recall": 0.7142857142857143,
+      "f1-score": 0.8333333333333334,
+      "support": 7.0
+    },
+    "Sunburn": {
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.9230769230769231,
+      "support": 7.0
+    },
+    "Teething Pain": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 7.0
+    },
+    "Tension Headache": {
+      "precision": 0.7,
+      "recall": 0.875,
+      "f1-score": 0.7777777777777778,
+      "support": 8.0
+    },
+    "Testicular Pain": {
+      "precision": 0.7777777777777778,
+      "recall": 0.875,
+      "f1-score": 0.8235294117647058,
+      "support": 8.0
+    },
+    "Tetanus Risk Wound": {
+      "precision": 0.875,
+      "recall": 1.0,
+      "f1-score": 0.9333333333333333,
+      "support": 7.0
+    },
+    "Tinnitus": {
+      "precision": 0.6666666666666666,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.75,
+      "support": 7.0
+    },
+    "Tonsillitis": {
+      "precision": 0.375,
+      "recall": 0.75,
+      "f1-score": 0.5,
+      "support": 8.0
+    },
+    "Tuberculosis": {
+      "precision": 0.875,
+      "recall": 0.875,
+      "f1-score": 0.875,
+      "support": 8.0
+    },
+    "Tuberculosis Exposure": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "Type 2 Diabetes": {
+      "precision": 1.0,
+      "recall": 0.5714285714285714,
+      "f1-score": 0.7272727272727273,
+      "support": 7.0
+    },
+    "Typhoid Fever": {
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1-score": 0.9333333333333333,
+      "support": 8.0
+    },
+    "Urinary Tract Infection": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
+      "support": 8.0
+    },
+    "Urticaria": {
+      "precision": 1.0,
+      "recall": 0.625,
+      "f1-score": 0.7692307692307693,
+      "support": 8.0
+    },
+    "Vaginitis": {
+      "precision": 1.0,
+      "recall": 0.625,
+      "f1-score": 0.7692307692307693,
+      "support": 8.0
+    },
+    "Vertigo": {
+      "precision": 1.0,
+      "recall": 0.625,
+      "f1-score": 0.7692307692307693,
+      "support": 8.0
+    },
+    "Vitamin D Deficiency": {
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1-score": 0.9333333333333333,
+      "support": 8.0
+    },
+    "Worm Infestation": {
+      "precision": 0.6153846153846154,
+      "recall": 1.0,
+      "f1-score": 0.7619047619047619,
+      "support": 8.0
+    },
+    "Zika Virus Infection": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1-score": 0.8571428571428571,
+      "support": 8.0
+    },
+    "accuracy": 0.8075,
+    "macro avg": {
+      "precision": 0.8592824016261517,
+      "recall": 0.8080357142857142,
+      "f1-score": 0.8150018870166729,
+      "support": 1200.0
+    },
+    "weighted avg": {
+      "precision": 0.8622089530839532,
+      "recall": 0.8075,
+      "f1-score": 0.8161730452262416,
+      "support": 1200.0
+    }
+  },
+  "feature_names": [
+    "symptom::abdominal cramps",
+    "symptom::abdominal pain",
+    "symptom::abnormal discharge",
+    "symptom::acid reflux",
+    "symptom::acne",
+    "symptom::active bleeding",
+    "symptom::altered taste",
+    "symptom::anal itching",
+    "symptom::anal itching at night",
+    "symptom::animal bite",
+    "symptom::anxiety",
+    "symptom::asking repetition",
+    "symptom::back pain",
+    "symptom::bad breath",
+    "symptom::balance problem",
+    "symptom::barking cough",
+    "symptom::belching",
+    "symptom::big toe pain",
+    "symptom::bilateral leg ache",
+    "symptom::bite mark",
+    "symptom::black stool",
+    "symptom::blackheads",
+    "symptom::bleeding",
+    "symptom::bleeding from nose",
+    "symptom::bleeding gums",
+    "symptom::blistering",
+    "symptom::blisters",
+    "symptom::bloating",
+    "symptom::bloating after dairy",
+    "symptom::blood in urine",
+    "symptom::bloody diarrhea",
+    "symptom::blue lips",
+    "symptom::blurred vision",
+    "symptom::body aches",
+    "symptom::bone deformity",
+    "symptom::bone pain",
+    "symptom::brief shaking episode",
+    "symptom::burn pain",
+    "symptom::burning",
+    "symptom::burning eyes",
+    "symptom::burning feet",
+    "symptom::burning mouth pain",
+    "symptom::burning skin pain",
+    "symptom::burning stomach",
+    "symptom::burning tongue",
+    "symptom::burning urination",
+    "symptom::burrow tracks",
+    "symptom::calf pain",
+    "symptom::calf swelling",
+    "symptom::cardiovascular risk",
+    "symptom::changed bowel habits",
+    "symptom::chest discomfort",
+    "symptom::chest pain",
+    "symptom::chest pressure",
+    "symptom::chest tightness",
+    "symptom::chewing objects",
+    "symptom::child related symptom",
+    "symptom::chills",
+    "symptom::chronic cough",
+    "symptom::cloudy urine",
+    "symptom::cloudy vision",
+    "symptom::cold feet",
+    "symptom::cold intolerance",
+    "symptom::confusion",
+    "symptom::conjunctivitis",
+    "symptom::constipation",
+    "symptom::cough",
+    "symptom::coughing blood",
+    "symptom::crushing chest pain",
+    "symptom::crying",
+    "symptom::cyclic fever",
+    "symptom::dandruff",
+    "symptom::dark urine",
+    "symptom::daytime fatigue",
+    "symptom::deep sleep",
+    "symptom::dehydration signs",
+    "symptom::diaper area rash",
+    "symptom::diarrhea",
+    "symptom::diarrhea after dairy",
+    "symptom::difficulty eating",
+    "symptom::difficulty maintaining erection",
+    "symptom::difficulty sleeping",
+    "symptom::dirty wound",
+    "symptom::discharge",
+    "symptom::dizziness",
+    "symptom::dizziness with travel",
+    "symptom::drawing legs up",
+    "symptom::drooling",
+    "symptom::dry cough",
+    "symptom::dry eyes",
+    "symptom::dry itchy skin",
+    "symptom::dry mouth",
+    "symptom::dry skin",
+    "symptom::dull headache",
+    "symptom::ear canal pain",
+    "symptom::ear discharge",
+    "symptom::ear fullness",
+    "symptom::ear pain",
+    "symptom::ear pressure",
+    "symptom::early awakening",
+    "symptom::early fullness",
+    "symptom::evening fussiness",
+    "symptom::excess hair growth",
+    "symptom::excess worry",
+    "symptom::excessive thirst",
+    "symptom::eye discharge",
+    "symptom::eye irritation",
+    "symptom::eye tearing",
+    "symptom::eyelid lump",
+    "symptom::eyelid pain",
+    "symptom::face droop",
+    "symptom::facial discomfort",
+    "symptom::facial pressure",
+    "symptom::facial redness",
+    "symptom::facial swelling",
+    "symptom::fainting",
+    "symptom::fatigue",
+    "symptom::fear of water",
+    "symptom::fever",
+    "symptom::fever related symptom",
+    "symptom::fine rash",
+    "symptom::fishy odor",
+    "symptom::flank pain",
+    "symptom::flushing",
+    "symptom::foamy urine",
+    "symptom::food exposure",
+    "symptom::foot rash",
+    "symptom::foreign body sensation",
+    "symptom::frequent urination",
+    "symptom::fruity breath",
+    "symptom::gas",
+    "symptom::glare",
+    "symptom::greasy scaling",
+    "symptom::gritty feeling",
+    "symptom::guarding",
+    "symptom::gum swelling",
+    "symptom::halos around lights",
+    "symptom::hand numbness",
+    "symptom::hand rash",
+    "symptom::hard stool",
+    "symptom::headache",
+    "symptom::hearing change",
+    "symptom::heartburn",
+    "symptom::heat intolerance",
+    "symptom::hesitancy",
+    "symptom::high blood pressure",
+    "symptom::high blood sugar",
+    "symptom::high body temperature",
+    "symptom::high cholesterol history",
+    "symptom::high fever",
+    "symptom::hives",
+    "symptom::hoarse voice",
+    "symptom::honey colored crust",
+    "symptom::hot dry skin",
+    "symptom::hot flashes",
+    "symptom::infection related symptom",
+    "symptom::infestation related symptom",
+    "symptom::infrequent bowel movement",
+    "symptom::irregular heartbeat",
+    "symptom::irregular periods",
+    "symptom::irritability",
+    "symptom::irritation",
+    "symptom::itching",
+    "symptom::itchy blisters",
+    "symptom::itchy eyes",
+    "symptom::itchy rash",
+    "symptom::itchy scalp",
+    "symptom::jaundice",
+    "symptom::jaw pain",
+    "symptom::jaw stiffness",
+    "symptom::joint pain with use",
+    "symptom::joint stiffness",
+    "symptom::joint warmth",
+    "symptom::koplik spots",
+    "symptom::left arm discomfort",
+    "symptom::left arm pain",
+    "symptom::left lower abdominal pain",
+    "symptom::leg cramps",
+    "symptom::leg pain at night",
+    "symptom::leg pain walking",
+    "symptom::lethargy",
+    "symptom::light sensitivity",
+    "symptom::localized pain",
+    "symptom::localized swelling",
+    "symptom::loss of appetite",
+    "symptom::loss of awareness",
+    "symptom::loss of consciousness",
+    "symptom::loss of interest",
+    "symptom::loss of smell",
+    "symptom::loss of taste",
+    "symptom::low back pain",
+    "symptom::low mood",
+    "symptom::low oxygen",
+    "symptom::low vitamin d history",
+    "symptom::lower abdominal pain",
+    "symptom::lymph node swelling",
+    "symptom::menstrual cramps",
+    "symptom::mild fever",
+    "symptom::morning headache",
+    "symptom::morning joint stiffness",
+    "symptom::morning nausea",
+    "symptom::mouth pain",
+    "symptom::mouth sores",
+    "symptom::mucus",
+    "symptom::muscle cramps",
+    "symptom::muscle pain",
+    "symptom::muscle spasm",
+    "symptom::muscle spasms",
+    "symptom::muscle weakness",
+    "symptom::nasal congestion",
+    "symptom::nasal dryness",
+    "symptom::nasal stuffiness",
+    "symptom::nausea",
+    "symptom::nausea with travel",
+    "symptom::neck pain",
+    "symptom::neck stiffness",
+    "symptom::new neurological weakness",
+    "symptom::night cough",
+    "symptom::night hand pain",
+    "symptom::night itching",
+    "symptom::night sweats",
+    "symptom::night urination",
+    "symptom::nighttime urination",
+    "symptom::normal daytime activity",
+    "symptom::numb leg",
+    "symptom::numbness",
+    "symptom::oily skin",
+    "symptom::one sided headache",
+    "symptom::one sided rash",
+    "symptom::one sided weakness",
+    "symptom::pain",
+    "symptom::pain after fatty meals",
+    "symptom::pain behind eyes",
+    "symptom::pain pulling ear",
+    "symptom::pain radiating to back",
+    "symptom::pain radiating to groin",
+    "symptom::pain with exertion",
+    "symptom::pain with intercourse",
+    "symptom::pain worse bending",
+    "symptom::painful blisters",
+    "symptom::painful bowel movement",
+    "symptom::painful grouped blisters",
+    "symptom::painful lump",
+    "symptom::painful mouth sore",
+    "symptom::painful periods",
+    "symptom::painful skin",
+    "symptom::painful swallowing",
+    "symptom::painful urination",
+    "symptom::pale skin",
+    "symptom::palpitations",
+    "symptom::parotid swelling",
+    "symptom::paroxysmal cough",
+    "symptom::pediatric related symptom",
+    "symptom::peeling skin",
+    "symptom::pelvic pain",
+    "symptom::persistent cough",
+    "symptom::persistent vomiting",
+    "symptom::pimples",
+    "symptom::poor feeding",
+    "symptom::poor sleep",
+    "symptom::post cough vomiting",
+    "symptom::post seizure confusion",
+    "symptom::post seizure sleepiness",
+    "symptom::pregnancy",
+    "symptom::pregnancy with urinary or fever symptoms",
+    "symptom::pressure around head",
+    "symptom::pressure in lower belly",
+    "symptom::productive cough",
+    "symptom::profuse watery diarrhea",
+    "symptom::prolonged crying",
+    "symptom::pus collection",
+    "symptom::rapid breathing",
+    "symptom::rapidly spreading redness",
+    "symptom::rash",
+    "symptom::rash after exposure",
+    "symptom::recent nose picking",
+    "symptom::rectal bleeding",
+    "symptom::recurrent sores",
+    "symptom::red eye",
+    "symptom::red eyes",
+    "symptom::red painful skin",
+    "symptom::red swollen joint",
+    "symptom::redness",
+    "symptom::reduced hearing",
+    "symptom::reduced neck movement",
+    "symptom::reduced range of motion",
+    "symptom::reduced smell",
+    "symptom::regurgitation",
+    "symptom::restless sleep",
+    "symptom::restlessness",
+    "symptom::right lower abdominal pain",
+    "symptom::right upper abdominal pain",
+    "symptom::ring shaped rash",
+    "symptom::ringing ears",
+    "symptom::runny nose",
+    "symptom::scaling",
+    "symptom::scalp itching",
+    "symptom::scratch marks",
+    "symptom::scrotal swelling",
+    "symptom::seizure",
+    "symptom::seizure with fever",
+    "symptom::sensitivity to sweets",
+    "symptom::severe abdominal pain",
+    "symptom::severe allergic reaction",
+    "symptom::severe bleeding",
+    "symptom::severe dehydration",
+    "symptom::severe eye pain",
+    "symptom::severe flank pain",
+    "symptom::severe joint pain",
+    "symptom::severe limb pain",
+    "symptom::severe one sided eye pain",
+    "symptom::severe pain",
+    "symptom::severe pelvic pain",
+    "symptom::severe upper abdominal pain",
+    "symptom::severe weakness",
+    "symptom::sexual performance concern",
+    "symptom::shaking",
+    "symptom::shooting leg pain",
+    "symptom::shortness of breath",
+    "symptom::shortness of breath lying flat",
+    "symptom::shortness of breath on exertion",
+    "symptom::silvery scales",
+    "symptom::skin cracks",
+    "symptom::skin redness",
+    "symptom::skin sores",
+    "symptom::skin swelling",
+    "symptom::skin tenderness",
+    "symptom::skin vesicles",
+    "symptom::sleep change",
+    "symptom::sleep disturbance",
+    "symptom::slow vision change",
+    "symptom::slow wound healing",
+    "symptom::slurred speech",
+    "symptom::sneezing",
+    "symptom::snoring",
+    "symptom::sore throat",
+    "symptom::spinning sensation",
+    "symptom::stepwise fever",
+    "symptom::stiff back",
+    "symptom::straining",
+    "symptom::stress",
+    "symptom::stridor",
+    "symptom::sudden joint pain",
+    "symptom::sudden shortness of breath",
+    "symptom::sun exposure",
+    "symptom::sunken eyes",
+    "symptom::sweating",
+    "symptom::swelling",
+    "symptom::swelling after injury",
+    "symptom::swelling ankles",
+    "symptom::swollen small joints",
+    "symptom::swollen tonsils",
+    "symptom::testicular pain",
+    "symptom::thick nasal discharge",
+    "symptom::thick plaques",
+    "symptom::thick white discharge",
+    "symptom::thin discharge",
+    "symptom::throat irritation",
+    "symptom::throat pain",
+    "symptom::tingling",
+    "symptom::tingling at bite site",
+    "symptom::tingling before rash",
+    "symptom::tingling feet",
+    "symptom::tooth pain",
+    "symptom::travel exposure",
+    "symptom::trouble breathing",
+    "symptom::upper abdominal pain",
+    "symptom::urinary urgency",
+    "symptom::vaginal discharge",
+    "symptom::vaginal irritation",
+    "symptom::vaginal itching",
+    "symptom::very low urine",
+    "symptom::visible cavity",
+    "symptom::visible facial vessels",
+    "symptom::visible nits",
+    "symptom::visible tiny worms",
+    "symptom::vision loss",
+    "symptom::visual aura",
+    "symptom::voice loss",
+    "symptom::vomiting",
+    "symptom::vomiting blood",
+    "symptom::waist weight gain",
+    "symptom::warm leg",
+    "symptom::warm red skin",
+    "symptom::warm skin",
+    "symptom::watery diarrhea",
+    "symptom::watery eyes",
+    "symptom::weak urine stream",
+    "symptom::weakness",
+    "symptom::weight gain",
+    "symptom::weight loss",
+    "symptom::welts",
+    "symptom::wet bed",
+    "symptom::wheezing",
+    "symptom::white mouth patches",
+    "symptom::whooping cough",
+    "symptom::widespread pain",
+    "symptom::worm related symptom",
+    "symptom::worst headache",
+    "symptom::wrist tingling",
+    "symptom::xanthelasma",
+    "age::child",
+    "age::adult",
+    "age::older adult"
+  ]
+}
